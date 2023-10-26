@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './view/login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { SignupComponent } from './view/signup/signup.component';
+import { HomeComponent } from './view/home/home.component';
+import { ProfileComponent } from './view/profile/profile.component';
 
 const appRoute:Routes=[
   {path:'' , component:AppComponent},
@@ -14,7 +17,10 @@ const appRoute:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent,
+    HomeComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
