@@ -9,10 +9,15 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { HomeComponent } from './view/home/home.component';
 import { ProfileComponent } from './view/profile/profile.component';
+import { ProductComponent } from './view/product/product.component';
+import { ContactsComponent } from './view/contacts/contacts.component';
 
 const appRoute:Routes=[
-  {path:'' , component:AppComponent},
-  {path:'login' , component:LoginComponent}
+
+  {path:'',component:HomeComponent},
+  {path:'login',component:LoginComponent},
+  {path:'profile',component:ProfileComponent},
+  {path:'signup',component:SignupComponent}
 ];
 
 @NgModule({
@@ -21,7 +26,9 @@ const appRoute:Routes=[
     LoginComponent,
     SignupComponent,
     HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProductComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

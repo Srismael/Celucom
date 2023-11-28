@@ -6,7 +6,80 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-   
+
+}
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  max-width: 100%;
+}
+
+.logo {
+  font-size: 25px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a{
+  font-size: 18px;
+  padding: 20px;
+  color: #111111;
+  display: block;
+}
+
+.menu .navbar ul li a:hover{
+  color: #888888;
+}
+
+#menu{
+  display: none;
+}
+
+.men{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label{
+  cursor: pointer;
+  display: none;
+}
+
+.submenu{
+  position: relative;
+}
+
+.submenu #carrito{
+  display: none;
+}
+
+.submenu:hover #carrito{
+  display: block;
+  position: absolute;
+  right: 0;
+  backdrop-filter: blur(10px);
+  top: 100%;
+  z-index: 1;
+  background-color: #4E4B5076;
+  padding: 20px;
+  min-width: 400px;
 }
 
 body{
@@ -15,13 +88,13 @@ body{
 
 img {
     max-width: 100%;
-    
+
 }
 
 .container{
     max-width: 70%;
     margin: 0 auto;
-    
+
 }
 
 
@@ -68,7 +141,7 @@ img {
 .menu .navbar ul li {
     position: relative;
     float: left;
-} 
+}
 
 .menu .navbar ul li a{
     font-size: 18px;
@@ -159,7 +232,7 @@ th, td{
     color: #4b4b4b;
     font-size: 18px;
     margin-bottom: 25px;
-    
+
 }
 .titulo{
   color: #4b4b4b;
@@ -251,7 +324,7 @@ h2{
     line-height: 1;
     color: #181818;
     margin-bottom: 10px;
-    
+
 }
 
 .oferts-content{
@@ -388,6 +461,9 @@ h3{
     display: flex;
     justify-content: space-between;
     background-color: #e0e0e0;
+    margin-top: 50px;
+    position: relative;
+    top: 75px;
 }
 
 .link h3{
