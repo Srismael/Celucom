@@ -15,12 +15,20 @@ body{
 
 img {
     max-width: 100%;
+    
 }
 
 .container{
-    max-width: 100%;
+    max-width: 70%;
     margin: 0 auto;
     
+}
+
+
+.img-buscador{
+    align-items: center;
+    justify-content: space-between;
+    height: 10px;
 }
 
 .header{
@@ -35,7 +43,7 @@ img {
         rgb(190, 190, 190) 100%,
     );
     padding: 70px 0;
-    background-color: #cacaca;
+    background-color: #f6f6f6;
 }
 
 .menu {
@@ -47,6 +55,7 @@ img {
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
+    max-width: 100%;
 }
 
 .logo {
@@ -74,6 +83,12 @@ img {
 
 #menu{
     display: none;
+}
+
+.men{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .menu-icono {
@@ -228,7 +243,7 @@ th, td{
 }
 
 .oferts {
-    padding: 100px 0;
+    padding: 300px 0;
 }
 
 h2{
@@ -241,9 +256,9 @@ h2{
 
 .oferts-content{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    background-color: #b6b6b6;
+    justify-content: center;
+    margin-bottom: 6px;
+    background-color: #f6f6f6;
 }
 
 .oferts-1{
@@ -321,6 +336,10 @@ h3{
     text-align: center;
 }
 
+.nt{
+    width: 10%;
+}
+
 .promotion-img img{
     width: 250px;
 }
@@ -388,6 +407,10 @@ h3{
     color: #ff3c2a;
 }
 
+.con{
+    align-items: center;
+    justify-content: space-between;
+}
 .mapa{
     text-align: center;
 }
@@ -516,5 +539,7 @@ h3{
 }
 
 
-
+.footer{
+    max-width: 100%;
+}
 
