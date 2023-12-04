@@ -26,7 +26,7 @@
 
 .card{
     display: inline-block;
-    width: 21%;
+    width: 20%;
     margin: 37px;
     border-radius: 22px;
     overflow: hidden;
@@ -73,7 +73,7 @@
     color: #fff;
 }
 /* resposiba primera parte de menu, ofertasespeciales*/
-@media(max-width:991px){
+@media(max-width:915px){
     .container{
         flex-direction: column; 
         flex-wrap: wrap; 
@@ -81,4 +81,8 @@
         position: absolute;
         align-items: center;
       }
+      .card{
+        width: 82%;
     }
+    }
+    
