@@ -1,3 +1,36 @@
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8fafc;
+  /* Establece la imagen de fondo */
+  background-image: url('../../../assets/images/Imagen1.jpg');
+  /* Ajusta cómo se muestra la imagen */
+  background-size: 100% 100%; /* Opciones: cover, contain, auto, etc. */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  /* Puedes ajustar más propiedades según tus necesidades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contenedor{
+  background-image: url('../../../assets/images/Imagen1.jpg');
+  /* Propiedades de diseño */
+
+/* Agregar imagen de fondo */
+
+/* Ajustar el tamaño de la imagen */
+background-size: cover; /* Para cubrir todo el contenedor */
+/* Otras propiedades opcionales */
+background-repeat: no-repeat; /* Evita la repetición de la imagen */
+background-position: center; /* Centra la imagen */
+background-size: 200% 200%;
+}
+
+
+
+
 /* login.component.css */
 
 .login-container {
@@ -10,9 +43,9 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   text-align: center;
   height: 1000%;
-  margin: 150px;
+  margin: 260px;
   display: grid;
-    margin-left: 750px;
+  margin-left: 300px;
 }
 
 .login-container h2 {
@@ -52,4 +85,127 @@ button {
 
 button:hover {
   background-color: gray;
+}
+/* resposiba primera parte de menu, ofertasespeciales*/
+@media(max-width:991px){
+  .menu{
+      padding: 20px;
+  }
+
+  .menu label{
+      display: initial;
+  }
+
+  .menu .navbar{
+      position: absolute;
+      top: 100%;
+      left: 10px;
+      right: 790px;
+      background-color: #a5a5a5;
+      display: none;
+  }
+
+  .menu .navbar ul li{
+      width: 100%;
+  }
+
+  #menu:checked ~ .navbar{
+      display: initial;
+  }
+
+  .logo{
+      display: none;
+  }
+
+  .menu .navbar ul li a:hover{
+      color: #ffffff;
+  }
+
+  .header{
+      min-height: 0vh;
+      padding: 100px 30px 50px 30px;
+  }
+
+  .header-content{
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .header-txt{
+      margin-bottom: 25px;
+  }
+/* resposiba primera parte de slogan, celulares*/
+  .oferts{
+      padding: 30px;
+  }
+
+  .oferts-content{
+      flex-direction: column;
+  }
+
+  .ofert-1{
+      margin-bottom: 30px;
+  }
+
+  .logan-1{
+      order: -2;
+      margin-bottom: 30px;
+  }
+/* resposiba primera parte de promociones*/
+  .promotion{
+      padding: 30px;
+  }
+
+  .promotion-content{
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .promotion-txt{
+      margin-bottom: 25px;
+  }
+
+  .promotion-img img{
+      width: 200px;
+  }
+/* resposiba primera parte de productos*/
+  .product{
+      padding: 30px;
+  }
+
+  .product-content{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0;
+  }
+/* resposiba primera parte de Nuevas noticias*/
+  .blog{
+      padding: 30px;
+  }
+
+  .blog-content{
+      flex-direction: column;
+  }
+/* resposiba primera parte de footer*/
+  .footer{
+      padding: 30px;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .mapa{
+      margin: 10px;
+      padding: 0px;
+      width: 80px;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+      flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+  }
+}
+
+
+.footer{
+  max-width: 100%;
 }

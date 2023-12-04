@@ -7,6 +7,7 @@ import { HomeComponent } from './view/home/home.component';
 import { ProfileComponent } from './view/profile/profile.component';
 
 
+
 @NgModule({
   declarations: [],
   imports: [

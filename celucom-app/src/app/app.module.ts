@@ -17,7 +17,9 @@ const appRoute:Routes=[
   {path:'',component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'profile',component:ProfileComponent},
-  {path:'signup',component:SignupComponent}
+  {path:'signup',component:SignupComponent},
+  {path:'Product',component:ProductComponent},
+  {path: 'Contacts',component:ContactsComponent}
 ];
 
 @NgModule({
